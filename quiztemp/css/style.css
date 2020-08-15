@@ -60,7 +60,7 @@ ul{
 }
 .navbar .nav-items .links ul li:hover{
     background-color: gray;
-    border-bottom: red;
+    border-bottom: 1px solid  red;;
 }
 .navbar .nav-items 
 .links ul li a:hover{
