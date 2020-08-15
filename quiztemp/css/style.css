@@ -164,9 +164,11 @@ ul{
     border-radius:40px;
     padding: 12px;
     border: none;
-    justify-content:center;
-    align-items:center;
-    
+    justify-content: center;
+    align-items: center;
+    margin-left:550px;
+    margin-bottom: 20px;
+
 }
     /*about style*/
 
