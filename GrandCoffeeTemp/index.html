@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ide Academy"/>
+    <meta name="author" content="Amira"/>
+    <meta name="keywords" content="Css,HTML"/>
+    <title>Grand Coffee</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <!--font awesome-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <!-- my style sheet file-->
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+<!--Navbar Area-->
+<nav class="navbar bg-dark">
+<div class=" nav-items">
+    <div class="logo">
+        <a href="#"><img src="images/nav images/logo.png" alt="logo"> </a>
+    </div>
+    <div class="links">
+        <ul>
+            <li><a href="#" class="primary-text-color">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#"><i class="fas fa-search"></i></a></li>
+            
+            
+        </ul>
+    </div>
+    </div>
+</nav>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides ">
+      <img src="images/banner image/banner-bg.png" style="width:100%" alt="coffee cup">
+      <div class="banner-content">
+        <h2>Outstanding</h2>
+        <h3 class="text-white">Coffee shop</h3>
+        <p  class="text-white">There are many variations of passages of Lorem Ipsum available, but <br>the majority have suffered alteration in some form, by injected<br> humour,</p>
+        <button  class="text-white"><a href="#">Learn More</a></button>
+      </div>
+    </div>
+  
+    <div class="mySlides ">
+      <img src="images/banner image/banner-bg.png" style="width:100% " alt="coffee cup">
+      <div class="banner-content">
+        <h2>Amazing</h2>
+        <h3 class="text-white">latte</h3>
+        <p  class="text-white">randomised words which don't look even slightly believable.  but <br>the majority have suffered alteration in some form, by injected<br> humour,</p>
+        <button  class="text-white"><a href="#">Learn More</a></button>
+      </div>
+    </div>
+  
+    <div class="mySlides ">
+      <img src="images/banner image/banner-bg.png" style="width:100%" alt="coffee cup">
+      <div class="banner-content">
+          <h2>MindBlowing</h2>
+          <h3 class="text-white">Cabbuccino</h3>
+          <p  class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci. but <br>the majority have suffered alteration in some form, by injected<br> humour,</p>
+          <button  class="text-white"><a href="#">Learn More</a></button>
+        </div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+    <!--About Section-->
+    <section class="about">
+        <div class="about-container">
+            <div class="about-text">
+            <h2 class="primary-text-color">About Us</h2>
+            <p>Full cleaning and housekeeping services for companies and<br> households.<br><br>
+                Lorem Ipsum is simply dummy text of the printing and typesetting<br> industry. 
+                Lorem Ipsum has been the industry's standard dummy<br> text.Lorem Ipsum is simply</p>
+                <button  class="text-white"><a href="#">Read More</a></button>
+            </div>
+            <img src="images/about image/about-img.png" alt="cofee ,book & glasses on table ">
+           
+        </div>
+    </section>
+
+    <!-- Gallery section-->
+<section class="gallery">
+    <div class="gallery-container">
+        <div class="text-center">
+    <h2 class="primary-text-color">Our Gallery</h2>
+    <p>Lorem Ipsum is simply dummy text of printing typesetting ststry lorem Ipsum the industry'ndard dummy text ever since of the 1500s, when an<br>
+        unknown printer took a galley of type and scra make a type specimen book. It has</p>
+</div>
+<div class="row">
+    <div class="col"><img src="images/gallery images/img-1.png" alt="coffee"></div>
+    <div class="col"><img src="images/gallery images/img-2.png" alt="coffee" ></div>
+    <div class="col"><img src="images/gallery images/img-3.png" alt="coffee" ></div>
+    <div class="col"><img src="images/gallery images/img-4.png" alt="coffee" ></div>
+    <div class="col"><img src="images/gallery images/img-5.png" alt="coffee" ></div>
+    <div class="col"><img src="images/gallery images/img-6.png" alt="coffee" ></div>
+    <div class="col"><img src="images/gallery images/img-7.png" alt="coffee" ></div>
+    <div class="col"><img src="images/gallery images/img-8.png" alt="coffee" ></div>
+    <div class="col"><img src="images/gallery images/img-9.png" alt="coffee" ></div>
+    </div>
+    <button  class="text-white"><a href="#">See More</a></button>
+
+
+    
+
+</div>
+</section>
+
+<section class="services">
+    
+    <div class="service-text text-white text-center">
+        <h2 >Services</h2>
+        <p class="text-white">Typesetting industry lorem Ipsum is simply dummy text of the</p>
+    </div>
+    <div class="box-container">
+
+        <!-- 1  -->
+        <div class="box1">
+             <div class="icons">
+             <img src="images/services images/services icons/icon1.png" alt="mug">
+             </div>
+            <h3 class="heading ">Original Coffee</h3>
+            <p>Exerci tation ullamcorper suscipit lobortis<br>nisl ut aliquip ex ea</p>
+            <button>Read More</button>
+        </div>
+         <!-- 2 -->
+         <div class="box2">
+            <div class="icons">
+                <img src="images/services images/services icons/icon2.png" alt=" hot mug" >
+                </div>
+            <p class="heading"> 20 Coffee Flavors</p>
+            <p>Exerci tation ullamcorper suscipit lobortis<br>nisl ut aliquip ex ea</p>
+            <button>Read More</button>
+        </div>
+         <!-- 3  -->
+         <div class="box3">
+            <div class="icons">
+                <img src="images/services images/services icons/icon3.png" alt="hot tea mug">
+                </div>
+            <p class="heading">Pleasant Abient</p>
+            <p>Exerci tation ullamcorper suscipit lobortis<br>nisl ut aliquip ex ea</p>
+            <button>Read More</button>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial">
+        <div class="testimonial-text">
+        <h2 class="primary-text-color">Testimonial</h2>
+        <p>Eeven slightly believable. If you are going to use a passage of Lorem Ipsum, you need to</p>
+        <div class="auther">MONILA
+            <i class="fas fa-quote-left primary-text-color"></i>
+        </div>
+        <div class="testimonial-content">
+            <p>many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All themany variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some embarrassing hidden in the middle of text. All the</p>
+        </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+          </div>
+        </div>  
+</section>
+
+<section class="contact">
+    <div class="contact-container">
+    <h2 class="primary-text-color">Contact Us</h2>
+  <div class="form-container">
+    <form class="contact-form">
+
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="tel" placeholder="Phone Number"><br><br>
+        <textarea placeholder="Message" rows="2"></textarea><br><br>
+
+    </form>
+    <button class="btn">SEND</button>
+</div>
+
+
+    <div id="googleMap" style="width:580px;height:500px;"></div>
+
+<script>
+function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?AIzaSyDFLrPjDqAvUyKavweqi2Lp46X1vDUFIiQ&callback=myMap"></script>
+
+</div>
+    </section>
+
+    <section class="info">
+        <div class="about-box">
+             <h4 class="head">About</h4>
+            <p>consectetur adipiscing elit, sed do <br>eiusmod tempor incididunt ut labore<br> et dolore magna aliqua. Ut enim ad <br>minim veniam, quis nostrud <br>exercitation u</p>
+
+        </div>
+        <div class="menu-box">
+            <h4 class="head">Menu</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+        </div>
+        <div class="links-box">
+            <h4 class="head">Useful Links</h4>
+            <p>Adipiscing<br> Elit, sed do <br>Eiusmod <br>Tempor<br> incididunt
+            </p>
+
+        </div>
+        <div class="contact-box">
+            <h4 class="head">Contact us</h4>
+            <p><i class="fas fa-map-marker-alt"></i>Address : Loram Ipusm <br><br></p>
+            <p><i class="fas fa-phone-alt"></i>Call : +01 1234567890<br><br></p>
+            <p><i class="fas fa-envelope"></i>Email : demo@gmail.com</p>
+        </div>
+
+    </section>
+
+    <footer class=" text-center">
+        <div class="container">
+        <p>2020 All Rights Reserved. Design by Free html Templates</p>   
+    </div>
+    </footer>
+    
+</body>
+</html>
