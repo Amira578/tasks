@@ -1,0 +1,178 @@
+@charset "utf-8";
+/*top-bar : 
+danger-color : #E01705
+secondary-color : #F8F8F8
+*/
+
+
+.text-danger{
+    color : #E01705 !important;
+}
+.text-primary{
+  color: #0A1F44 !important;
+}
+.text-shady{
+    color: #4d586b;
+}
+.bg-secondary{
+    background-color: #F8F8F8 !important;
+}
+/*header style*/
+header{   
+    background-color:  #0A1F44;
+    color:white;
+    height: 45px;
+}
+.fixed{
+    background-color:  #0A1F44;
+    color:white;
+    height: 45px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.head p{
+    font-size:0.8rem;
+}
+.head button{
+     background-color: #E01705;
+     margin-left: 15px; 
+     align-items: center;
+     margin-top: 3px;
+
+}
+/*Nav Style*/
+
+.navbar{
+    background-color: white !important;
+}
+.navbar .navbar-nav .nav-item .nav-link {
+    font-size: large;
+    color: #0A1F44;
+
+}
+
+/*Banner Style*/
+
+.banner  .banner-container,
+.features .f-jam{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.banner .banner-container .banner-text h1,
+.jumbotron .j-content h1,
+.features .f-content h1{
+    font-family: cursive;
+    font-size:2.2rem;
+    font-weight: 700;
+
+}
+
+.banner .banner-text p ,
+.jumbotron .j-content p,
+.features .f-content p,
+.testimonial .t-text p{
+    font-family: cursive;
+    font-weight: 500;  
+    margin: 30px 0;
+    font-size:12px;
+}
+.banner .banner-img{
+    margin:40px 0;
+}
+
+.banner .banner-text .btn-danger,
+.banner .banner-text .btn-success{
+    background-color : #E01705 !important;
+    border-radius: 20px;
+    margin: 10px; 
+    padding:10px;
+    width:180px;
+    outline:none;
+    border:none;
+}
+.banner .banner-text .btn-success{
+    background-color :  #0A1F44 !important;
+    padding: 10px 20px;
+    
+}
+
+/*Jumbotron style*/
+.banner .container,
+ .jumbotron .container,
+ .features .container,
+ .testimonial .container{
+    width: 70%;
+    margin :0 auto;
+}
+.jumbotron .j-content h1,
+.features .f-content h1{
+    font-size: 2rem;
+}
+
+.jumbotron .row .l-content,
+.jumbotron .row .r-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.jumbotron .row  .l-content .p1 {
+    font-family: cursive;
+}
+.jumbotron .row  .l-content .p1 h4,
+.features  .f-jam .row .p2 h5{
+     font-size:15px;
+     font-weight: 800;
+}
+.jumbotron .row  .l-content .p1 p,
+.features .f-jam .row .p2 p{
+    font-size:10px;
+    font-weight: 500;
+}
+
+.jumbotron .row .l-content .row .icon,
+.features .f-jam .row .p2 .icon{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+    border-radius: 50%;
+    color: red;
+    height: 50px;
+    width: 40px;
+
+}
+
+/*features style*/
+
+.features .f-jam .row .p2{
+    border: 1px solid rgb(182, 180, 180); 
+    width: 200px;
+    height: 250px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    margin:5px;
+    text-align: center;
+    
+}
+
+/*testimonial style*/
+
+.testimonial .t-text h3{
+    font-weight: 900;
+    
+
+}
+.testimonial .t-cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
