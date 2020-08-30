@@ -1,0 +1,475 @@
+
+@charset "utf-8";
+*,*::after,*::before{
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color:#fff;
+}
+ul{
+    list-style: none;
+}
+.bg-primary{
+    background-color: #F8F8F8 !important ;
+}
+.text-green{
+    color: #A5C926 !important;
+}
+.bg-green{
+    background-color: #A5C926 !important; 
+
+}
+
+
+.upper-header {
+    background-color: #A5C926 !important; 
+    height: 27px;
+    margin: 0 auto;
+}
+.container1{
+    width: 95%;
+    margin: 0 auto;
+}
+.contact-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.contact-item .contact-ul li,
+.contact-item .icons-ul li {
+    display: inline-block;
+    padding:0 4px;
+    font-size: 0.7rem;
+    color:white;
+    
+}
+
+.contact-item .contact-ul li a,
+.navbar .navbar-nav .nav-item a:hover{
+    text-decoration: underline;
+   
+}
+.contact-item .icons-ul li {
+    padding: 0 0;
+    
+}
+.contact-item .icons-ul li a .icon {
+    padding: 4px 8px;
+    border-radius: 50%;
+    color: white;
+    
+}
+
+.contact-item .icons-ul li a .icon:hover{
+    background-color: #98B923 !important;
+    
+}
+/*navigation bar*/
+
+.bg-light{
+    background-color: white !important;
+    
+}
+
+.navbar {
+    width: 95%;
+    margin: 0 auto;
+}
+.navbar  .navbar-brand{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+.navbar .navbar-nav .nav-item a{
+    color: black !important;
+
+}
+
+
+
+.navbar-nav span{
+    margin-left: 4px;
+    padding:4px 7px;
+     border-radius:50%;
+      background-color: #A5C926;
+      color: white;
+      font-size:0.8rem;
+}
+
+
+/*banner Style*/
+
+.banner {
+    position: relative;
+    height: 95vh;
+    background-image: url(../images/banner/banner-image.jpg);
+    background-position: 50% 94%;
+    background-size: cover;
+    background-repeat: no-repeat;
+     flex-wrap: wrap ;
+}
+
+.banner .wrapper{
+    display: flex;
+  width: 100%;
+  max-width: 1200px;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  background-color: transparent;
+}
+
+.banner .intro{
+    display: flex;
+  width: 100%;
+  margin: 150px 0px 0px 320px ;
+  max-width: 520px;
+  padding: 56px 48px;
+  flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #111;
+  text-align: center;
+  
+  animation: spin 0.9s ease-out ;
+   opacity: 1; 
+   transform-style: preserve-3d;
+    
+  
+}
+@keyframes spin{
+    from{
+        transform: translate3d(0px, 0px, 0px) scale3d(0, 0, 0) rotateX(0deg) 
+        rotateY(0deg) rotateZ(0deg) ;
+    }
+    to{
+        visibility: visible;
+       transform:  translate3d(0px, 0px, 0px)   scale(1,1,1) rotatez(360deg)    
+    }
+}
+
+.banner .title 
+ {
+    margin-bottom: 16px;
+    color: #a5c926;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 600;
+}
+.banner h1 ,
+.categories h1 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 400;
+}
+.banner .w-button{
+    display:inline-block;
+    padding:9px 15px;;
+    color:white;
+    border:0;
+    text-decoration:none;
+    cursor:pointer;
+    border-radius:0
+}
+.banner .button , .button{
+    height: 48px;
+    padding: 12px 25px;
+    justify-content: center;
+    border-radius: 24px;
+    background-color: #a5c926;
+    transition: box-shadow 300ms ease;
+    color: #fff;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 600;
+    text-align: center;
+  }
+  .banner .button:hover {
+    box-shadow: 0 10px 10px -4px rgba(165, 201, 38, 0.5);
+    transform: scale(1.05);
+  }
+
+
+/*categories Style*/
+.categories{
+    height: 80vh;
+    background-color: #F8F8F8;
+}
+.categories .row{
+    text-align:center;
+    align-items: center;
+    justify-content: center;
+    padding-top:150px;
+    
+}
+.categories .row .stuffedAnimals,.categories .row .WoodenToys{
+    height: 30vh;
+    width: 100%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    animation: spin 0.9s ease-out ;
+    
+    
+    
+}
+.categories .row .stuffedAnimals{
+    background-color:#FFC12C;
+
+}
+
+.categories .row .WoodenToys{
+    background-color: #FB416B;
+
+} 
+
+.categories .row .stuffedAnimals img,
+.categories .row .WoodenToys img {
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    max-width:220px;
+    position: absolute;
+    left: 5px;
+    bottom: 26px;
+   
+}
+.categories .category-content
+{
+    margin-left: 224px;
+}
+.categories h1{
+    margin-top:30px;
+    color: white;
+    font-size:28px;
+    
+}
+
+.categories .shop-button{
+    font-weight: 600;
+    text-align: center;
+    justify-content: center;
+    background-color: #fff;
+    color: #111;
+    height: 40px;
+    padding: 8px 24px;
+    border-radius: 20px;
+    font-size: 13px;
+    outline:none;
+    border:none;
+    transition: 0.4s linear;
+}
+
+.categories .shop-button:hover{
+    transform:scale(1.1);
+    box-shadow: 2px 2px 2px gray;
+}
+
+.toys .headings{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.toys .headings .toy-link a{
+    color: black !important;
+    font-weight: 600;
+    border-bottom: 2px solid #E5E5E5;
+}
+.toys .headings .toy-link a:hover{
+    border-bottom-color:  #A5C926;
+    text-decoration: none;
+}
+.toys .progress {
+    height: 3px;
+    margin-bottom: 40px;
+}
+.toys .progress .progress-bar{
+    background-color: #A5C926;
+}
+.toys .row .toy-card .card{
+    border:none;
+    border-radius: 20px;
+    margin-bottom: 100px;
+    transition: 1s ease;
+    animation: spin 0.9s ease-out ;
+    
+
+}
+
+.toys .row .toy-card .card:hover{
+    box-shadow: 2px 2px 2px #E5E5E5;
+    transform: scale(1.06);
+}
+.toys .row .toy-card .card .card-body .toy-price{
+    background-color: #A5C926;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 14px;
+    padding: 4px 0;
+}
+
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+     url(../images/about/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.about button,
+.free .row .body button,
+.subscribe .content button,
+.subscribe .subscribe-box button,
+.instagram-section button {
+
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #A5C926;
+    border:none;
+    outline:none;
+    color:white
+    
+}
+
+.about button:hover{
+    transform: scale(1.06);
+    box-shadow: 1px 1px 1px #98B923;
+
+}
+
+
+.f-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.free .head-text{
+    padding: 100px 0;
+}
+
+.free .row .body hr{
+    width: 10%;
+    margin: 30px 0;
+    border: 1px solid #A5C926;
+}
+
+.free .row .body button{
+    border-radius: 30px;
+    margin: 30px 0;
+    width: 150px;
+    height: 50px;
+}
+.free .row .f-img img {
+    border-radius: 30px;
+}
+
+
+.subscribe{
+    margin: 100px 0;
+    height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    border-radius: 30px;
+    border: 1px solid #E5E5E5;
+    box-shadow: 1px 1px 1px #E5E5E5;
+}
+.subscribe .content{
+    display: flex;
+    margin-left: 50px;
+}
+.subscribe  .content button{
+    margin-right: 20px;
+}
+.subscribe .subscribe-box button{
+    border-radius: 30px;
+    width: 120px;
+    height: 50px;
+    margin-right: 20px;
+}
+
+.subscribe .subscribe-box input[type=email]{
+    border-radius: 30px;
+    width: 300px;
+    height: 50px;
+}
+
+.instagram-section{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.instagram-section .row .insta-imgs img{
+    border-radius: 30px ;
+    width:190px; 
+    height:190px;
+
+}
+
+.instagram-section .btn-insta{
+    margin:0 auto;
+    padding-bottom: 150px;
+}
+.instagram-section button{
+    width: 160px;
+
+    border-radius: 30px;
+    height: 50px;
+}
+
+.footer1 {
+    
+    height:  100px;
+    border-bottom: 1px solid white;
+    }
+    
+    .footer1 .footerr,
+    .footer1 .nav ul,
+    footer .container,
+    .footer1 .icons{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    
+    .footer1 .logo,
+    .footer1 ul {
+        margin-top: 35px;
+    }
+    
+    .footer1 .nav ul li,
+    .footer1  .icons i{
+        margin: 0 5px;
+    
+    }
+     footer{
+         height: 150px;
+     }
+    
+     footer .licence,
+     footer .copyrights{
+         margin-top: 60px;
+     }
+    
+    
+    

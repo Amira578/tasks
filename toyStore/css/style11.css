@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+/*header style*/
+
+header .contact-info{
+    background-color: #A5C926 !important;
+    display: flex;
+    align-content: center;
+
+    
+}
+ header .contact-info p{
+    display: inline-block;
+    
+}
+
+header .contact-info  .content-container{
+    font-size:0.8rem;
+}
+header .navbar-nav{
+    display: inline-block;
+    position: relative;
+    left: 100%;
+    
+}
+header .navbar-nav .nav-item{
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+header .icon{
+    color: white;
+    padding: 4px 8px;
+    border-radius: 50%;
+}
+header .icon:hover{
+    background-color: #98B923;
+}
+header nav{
+    position: relative;
+    top:2.9rem;
+}
+header nav .bg-light{
+    background-color: white !important;
+}
+
+nav .navbar-brand{
+    font-size: 1.2rem;
+    color: black !important;
+}
+header nav .navbar-nav .nav-item{
+    color: black !important;
+}
