@@ -17,23 +17,36 @@ secondary-color : #F8F8F8
 .bg-secondary{
     background-color: #F8F8F8 !important;
 }
+.bg-danger{
+    background-color: #E01705 !important;
+}
+.bg-primary{
+    background-color:#0A1F44 !important;
+
+}
+ul{
+    list-style: none;
+}
+.container{
+    width: 70%;
+    margin :0 auto;
+}
 /*header style*/
-header{   
+header,
+.fixed{   
     background-color:  #0A1F44;
     color:white;
     height: 45px;
+
+
 }
-.fixed{
-    background-color:  #0A1F44;
-    color:white;
-    height: 45px;
-}
+
 
 .head{
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    
 }
 .head p{
     font-size:0.8rem;
@@ -77,7 +90,9 @@ header{
 .banner .banner-text p ,
 .jumbotron .j-content p,
 .features .f-content p,
-.testimonial .t-text p{
+.testimonial .t-text p,
+.pricing .p-text p
+{
     font-family: cursive;
     font-weight: 500;  
     margin: 30px 0;
@@ -88,12 +103,13 @@ header{
 }
 
 .banner .banner-text .btn-danger,
+.pricing .row .pricing-details .btn-danger,
 .banner .banner-text .btn-success{
     background-color : #E01705 !important;
     border-radius: 20px;
-    margin: 10px; 
+    margin: 7px; 
     padding:10px;
-    width:180px;
+    width:130px;
     outline:none;
     border:none;
 }
@@ -104,13 +120,7 @@ header{
 }
 
 /*Jumbotron style*/
-.banner .container,
- .jumbotron .container,
- .features .container,
- .testimonial .container{
-    width: 70%;
-    margin :0 auto;
-}
+
 .jumbotron .j-content h1,
 .features .f-content h1{
     font-size: 2rem;
@@ -163,16 +173,274 @@ header{
     text-align: center;
     
 }
+.features .f-jam .row .p2 .icon{
+   
+    height: 50px;
+    width: 60px; 
+    margin-bottom: 10px;  
+}
+.features .f-jam .row .p2 .icon i{
+     padding: 0 0 0 20px ;
+}
 
 /*testimonial style*/
+.testimonial .t-text{
+    padding-top: 70px;
+    margin: 100px 0;
+}
+.testimonial .t-text h3,
+.pricing .p-text h3,
+.FAQ h3{
+    font-weight: 900;   
 
-.testimonial .t-text h3{
-    font-weight: 900;
-    
-
+}
+.testimonial .t-text p,
+.pricing .p-text p{
+    margin: 15px 0;
 }
 .testimonial .t-cards{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 90px;
 }
+
+.testimonial .t-cards .card{
+    position: relative;
+}
+
+.testimonial .t-cards .card .card-image{
+        position: absolute;
+        left:80px;
+        top: -50px;
+        width: 120px;
+        height: 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        border: 1px solid rgb(212, 212, 212); 
+        
+}
+
+.testimonial .t-cards .card img{ 
+    width: 100px;
+    height: 100px;
+   
+}
+.testimonial .t-cards .card .card-body{
+    margin: 60px 0 20px 0;
+ }
+.testimonial .t-cards .card .card-body .stars,
+.pricing .row .pricing-review .stars{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:gold
+}
+
+.testimonial .t-cards .card .card-body h6,
+.pricing .row .pricing-review h6{
+    font-size: 15px;
+}
+.testimonial .t-cards .card .card-body p,
+.pricing .row .pricing-review  p{
+    font-size:14px;
+}
+
+.testimonial .t-cards .card .card-body .subhead,
+.pricing .row .pricing-review .subhead{
+    font-size: 13px;
+    color:#acb0b8;
+}
+.testimonial .t-cards .card  .quote-icon,
+.pricing .row .pricing-review .quote-icon{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E01705;
+    width: 40px;
+    height: 40px;
+    bottom:-20px;
+    left: 120px;
+
+}
+
+
+
+/*Pricing Style*/
+
+.pricing .p-text{
+    padding-top: 70px;
+}
+
+.pricing .row {
+    margin-bottom: 100px;
+    margin-top: 40px;
+    
+}
+.pricing .row .pricing-review,
+.pricing .row .pricing-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 100px ;
+    width: 400px;
+}
+.pricing .row .pricing-review .pricing-img{
+    width: 60px;
+    height: 60px;
+    margin: 100px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.pricing  .row .pricing-review img{ 
+    width: 50px;
+    height: 50px;
+    
+}
+.pricing .row .pricing-review .quote-icon{
+     border: 1px solid white;
+     left: 240px;
+}
+
+.pricing .row .pricing-details{
+    border: 1px solid  #E01705;
+    width: 400px;
+}
+
+.pricing .row .pricing-details .before-discount{
+      display: inline-block;
+    text-decoration: line-through;
+    font-size: 22px;
+    color:gray;
+    margin-right: 10px;
+}
+
+.pricing .row .pricing-details .discount{
+    display: inline-block;
+    border-radius: 20px;
+    width: 70px;
+    
+}
+.pricing .row .pricing-details ul{
+    list-style-image: url(../images/check-circle-solid.svg);
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.pricing .row .pricing-details .btn-danger{
+    width: 55%;
+    padding: 7px 20px;
+}
+
+/*FAQ Style*/
+
+.FAQ .row .l-col ,
+.FAQ .row .r-col{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.FAQ .row .Ques h3{
+font-size: 17px;
+}
+
+.FAQ .row .Ques p{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #4d586b;
+}
+
+/*contacts style*/
+
+
+.contacts .getInTouch,
+.contacts .form{
+    border-top: 1px solid rgb(182, 180, 180) ;
+    border-bottom: 1px solid rgb(182, 180, 180)
+}
+.contacts .container1{
+    width: 60%;
+    margin: auto 0 auto auto;
+    padding: 100px 0;    
+}
+.contacts .getInTouch p,
+.contacts .form p{
+    font-family: cursive;
+    font-weight: 500; 
+    font-size:12px;
+    color:rgb(80, 75, 75);
+
+    
+}
+
+.contacts .getInTouch h6{
+    font-size: 12px;
+}
+.contacts .getInTouch p a {
+    color:rgb(80, 75, 75);
+}
+
+.contacts .getInTouch p i{
+    margin-right:5px;
+}
+.contacts .container2{
+    width: 60%;
+    margin: auto auto auto 0;
+    padding: 100px 0;
+}
+
+
+.contacts .form .bg-danger,
+.buy .bg-danger{
+    border-radius: 20px;
+    margin-top: 20px;
+   
+}
+
+
+/*footer style*/
+
+.footer1 {
+    
+height:  100px;
+border-bottom: 1px solid white;
+}
+
+.footer1 .footerr,
+.footer1 .nav ul,
+footer .container,
+footer .container .icons{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.footer1 .logo,
+.footer1 ul {
+    margin-top: 35px;
+}
+
+.footer1 .nav ul li,
+footer .container .icons i{
+    margin: 0 5px;
+
+}
+ footer{
+     height: 150px;
+ }
+
+ footer .icons,
+ footer .copyrights{
+     margin-top: 60px;
+ }
+
+
