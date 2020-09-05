@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>js Quiz
+    </title>
+</head>
+<body>
+
+    <form >
+        <input type="number" id="n1">
+        <input type="number" id="n2">
+        <br><br>
+        <button id="1" onClick="onclickHandler(this.id)" >Sum</button>
+        <button id="2" onClick="onclickHandler(this.id)">Subtract</button>
+        <br><br>
+        <button id="3" onClick="onclickHandler(this.id)"> Divide</button>
+        <button id="4" onClick="onclickHandler(this.id)">Multiply</button>
+        <button id="5" onClick="onclickHandler(this.id)">+-*/</button>
+    </form>
+
+    <br><br>
+      <h3>Result: <span id="result">0</span></h3>
+    <script>
+        
+
+        function onclickHandler(clickedID){
+            var num1= parseFloat( document.getElementById("n1").value);
+            var num2=parseFloat(document.getElementById("n2").value);
+
+            if(clickedID=='1'){
+                printResult(sum(num1,num2));
+            }
+            if(clickedID=='2'){
+                printResult(subtract(num1,num2));
+            }
+            if(clickedID=='3'){
+                printResult(Divide(num1,num2));
+            }
+            if(clickedID=='4'){
+                printResult(Multiply(num1,num2));
+            }
+            if(clickedID=='5'){
+                printall(num1,num2);
+            }
+            
+            
+            
+        }
+        function printResult(result)
+        {
+            res = document.getElementById('result');
+           res.innerHTML =result;
+        }
+       function sum(num1,num2)
+       {
+             return num1+num2;             
+       }
+       function subtract(num1,num2)
+       {
+             return num1-num2;             
+       }
+       function Divide(num1,num2)
+       {
+             return num1/num2;             
+       }
+       function Multiply(num1,num2)
+       {
+             return num1*num2;             
+       }
+       function printall(num1,num2){
+        result = document.getElementById('result');
+           result.innerHTML = "sum is "+
+            sum(num1,num2)+"\n subtraction is "+ 
+           subtract(num1,num2) + "\n Division is "
+            + Divide(num1,num2) +"\n Multiplication is "+
+             Multiply(num1,num2); 
+       }
+
+
+       
+    </script>
+    
+</body>
+</html>
